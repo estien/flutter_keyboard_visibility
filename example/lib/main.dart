@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
 }
 
 class KeyboardVisibilityExample extends StatefulWidget {
-  KeyboardVisibilityExample({Key key}) : super(key: key);
+  KeyboardVisibilityExample({Key? key}) : super(key: key);
 
 
   @override
@@ -31,8 +31,8 @@ class KeyboardVisibilityExample extends StatefulWidget {
 class _KeyboardVisibilityExampleState extends State<KeyboardVisibilityExample> {
 
   KeyboardVisibilityNotification _keyboardVisibility = new KeyboardVisibilityNotification();
-  int _keyboardVisibilitySubscriberId;
-  bool _keyboardState;
+  int? _keyboardVisibilitySubscriberId;
+  late bool _keyboardState;
 
   @protected
   void initState() {
